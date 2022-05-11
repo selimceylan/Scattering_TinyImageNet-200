@@ -1,4 +1,4 @@
-# Scattering TinyImageNet-200
+# Scattering Tiny ImageNet-200
 Some personal research code on analyzing deep learning models which works with scattering transform.
 
 ## Dataset
