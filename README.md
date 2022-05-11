@@ -4,6 +4,8 @@ Some personal research code on analyzing deep learning models which works with s
 ## Dataset
 Dataset is Tiny ImageNet-200. Tiny ImageNet Challenge is the course project for Stanford CS231N. Tiny ImageNet has 200 classes and each class has 500 training images, 50 validation images, and 50 test images. The images sizes are 64 x 64 pixels. Test set doesn't contain labels therefore no results for them in this repo.
 
+All of the validation dataset images exists together in one folder hence a code created for splitting. Prepare_val.py creates folders for per class and puts their images into folders.
+
 ## Model
 Scattering CNN model based on ResNet backbone and this backbone takes scattering transform output as input.\
 Firstly a batch normalization applied to scattering output "nn.BatchNorm2d(in_channels, eps=1e-5, affine=False)"\
@@ -31,7 +33,7 @@ Model contains ResNet backbone but the old works shows that usual ResNet models 
 Check out this sites to see the results for different models with this dataset.\
 ResNet-50: https://github.com/aqua1907/tiny_imagenet \
 ResNet-18: https://github.com/tjmoon0104/Tiny-ImageNet-Classifier \
-AlexNet: https://github.com/DennisHanyuanXu/Tiny-ImageNet \
+AlexNet: https://github.com/DennisHanyuanXu/Tiny-ImageNet
 
 According to the Standford University report, Inception-ResNet model can achieve 56.9% validation accuracy.\
 http://cs231n.stanford.edu/reports/2017/pdfs/930.pdf
