@@ -9,9 +9,11 @@ All of the validation dataset images exists together in one folder hence a code 
 ## Model
 Scattering CNN model based on ResNet backbone and this backbone takes scattering transform output as input.\
 Firstly a batch normalization applied to scattering output "nn.BatchNorm2d(in_channels, eps=1e-5, affine=False)"\
-After normalization a 2D convolution comes for change channels value to 64 (this value determines according to multiple of 2, depends on architecture) from scattering output's channel value. Input is ready for usual ResNet implementation now.\
+After normalization a 2D convolution comes for change channels value to 64 (this value determines according to multiple of 2, depends on architecture) from scattering output's channel value. Input is ready for usual ResNet implementation now.
 
 Additionally there is no downsampling for image resolutions because 2D scattering transform already reduces images size. Tiny Imagenet-200 images has 64x64 and after scattering images sizes decreased to 16x16.
+
+Check out the summary.txt for examine the architecture.
 
 ## Scattering
 Refer kymatio website and github repository for get informations about scattering transforms and their implementation to python.\
