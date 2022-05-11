@@ -37,10 +37,10 @@ ResNet-50: https://github.com/aqua1907/tiny_imagenet \
 ResNet-18: https://github.com/tjmoon0104/Tiny-ImageNet-Classifier \
 AlexNet: https://github.com/DennisHanyuanXu/Tiny-ImageNet
 
-According to the Standford University report, Inception-ResNet model can achieve 56.9% validation accuracy.\
+According to the Standford University report, Inception-ResNet model can achieve 56.9% validation accuracy from scratch.\
 http://cs231n.stanford.edu/reports/2017/pdfs/930.pdf
 
-This article used DenseNet and achieved 62.7% accuracy.\
+This article used DenseNet and achieved 62.7% accuracy from scratch.\
 https://arxiv.org/ftp/arxiv/papers/1904/1904.10429.pdf
 
 Scattering transform should be tried with these backbones.
