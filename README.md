@@ -43,4 +43,4 @@ http://cs231n.stanford.edu/reports/2017/pdfs/930.pdf
 This article used DenseNet and achieved 62.7% accuracy.\
 https://arxiv.org/ftp/arxiv/papers/1904/1904.10429.pdf
 
-Scattering transform should be tried with this backbones.
+Scattering transform should be tried with these backbones.
