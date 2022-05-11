@@ -1,10 +1,3 @@
-"""
-Classification on CIFAR10 (ResNet)
-==================================
-
-Based on pytorch example for CIFAR10
-"""
-
 import os
 import numpy as np
 import torch.utils.data as data
@@ -221,17 +214,8 @@ def load_ckp(checkpoint_fpath, model, optimizer):
     return model, optimizer, checkpoint['epoch']
 if __name__ == '__main__':
 
-    """Train a simple Hybrid Resnet Scattering + CNN model on CIFAR.
-
-        scattering 1st order can also be set by the mode
-        Scattering features are normalized by batch normalization.
-        The model achieves around 88% testing accuracy after 10 epochs.
-
-        scatter 1st order +
-        scatter 2nd order + linear achieves 70.5% in 90 epochs
-
-        scatter + cnn achieves 88% in 15 epochs
-
+    """Train a simple Hybrid Resnet Scattering + CNN model on Tiny ImageNet-200.
+    
     """
     parser = argparse.ArgumentParser(description='CIFAR scattering  + hybrid examples')
     parser.add_argument('--mode', type=int, default=1,help='scattering 1st or 2nd order')
@@ -321,7 +305,7 @@ if __name__ == '__main__':
         if epoch % 4 == 0:
             optimizer = torch.optim.SGD(model.parameters(), lr=lr, momentum=0.9,
                                         weight_decay=0.0005)
-            lr *= 0.4
+            lr *= 0.2
 
 
         train(model, device, train_iterator, optimizer, epoch + 1, scattering)
