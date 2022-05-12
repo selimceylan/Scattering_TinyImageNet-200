@@ -21,7 +21,8 @@ Web: https://www.kymat.io/ \
 Github Repo: https://github.com/kymatio/kymatio
  
 ## Citation
-> Andreux M., Angles T., Exarchakis G., Leonarduzzi R., Rochette G., Thiry L., Zarka J., Mallat S., Andén J., Belilovsky E., Bruna J., Lostanlen V., Hirn M. J., Oyallon E., Zhang S., Cella C., Eickenberg M. (2019). Kymatio: Scattering Transforms in Python. arXiv preprint arXiv:1812.11214.
+> Andreux M., Angles T., Exarchakis G., Leonarduzzi R., Rochette G., Thiry L., Zarka J., Mallat S., Andén J., Belilovsky E., Bruna J., Lostanlen V., Hirn M. J., Oyallon E., Zhang S., Cella C., Eickenberg M. (2019). Kymatio: Scattering Transforms in Python. arXiv preprint arXiv:1812.11214.\
+https://arxiv.org/abs/1812.11214
 
 ## Results
 Model trained from scratch and 51.54% validation accuracy achieved in 15 epochs.
